@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.8.10 on linux)" generated="20220511 22:53:52.223" rpa="false" schemaversion="3">
+<suite id="s1" name="Tasks2" source="/home/gams/Documents/rpachallenge/tasks2.robot">
+<test id="s1-t1" name="Store Web Page Content" line="12">
+<kw name="Open Available Browser">
+<arg>https://robotframework.org/</arg>
+<msg timestamp="20220511 22:53:52.264" level="FAIL">No keyword with name 'Open Available Browser' found.</msg>
+<status status="FAIL" starttime="20220511 22:53:52.264" endtime="20220511 22:53:52.264"/>
+</kw>
+<kw name="Get Text">
+<var>${text}</var>
+<arg>css:body</arg>
+<status status="NOT RUN" starttime="20220511 22:53:52.267" endtime="20220511 22:53:52.267"/>
+</kw>
+<kw name="Create File">
+<arg>${OUTPUT_DIR}${/}text.txt</arg>
+<arg>${text}</arg>
+<arg>overwrite=True</arg>
+<status status="NOT RUN" starttime="20220511 22:53:52.270" endtime="20220511 22:53:52.270"/>
+</kw>
+<kw name="Screenshot">
+<arg>css:h1</arg>
+<arg>${OUTPUT_DIR}${/}screenshot.png</arg>
+<status status="NOT RUN" starttime="20220511 22:53:52.273" endtime="20220511 22:53:52.273"/>
+</kw>
+<kw name="Close Browse" type="TEARDOWN">
+<msg timestamp="20220511 22:53:52.276" level="FAIL">No keyword with name 'Close Browse' found.</msg>
+<status status="FAIL" starttime="20220511 22:53:52.276" endtime="20220511 22:53:52.276">No keyword with name 'Close Browse' found.</status>
+</kw>
+<status status="FAIL" starttime="20220511 22:53:52.260" endtime="20220511 22:53:52.276">No keyword with name 'Open Available Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browse' found.</status>
+</test>
+<doc>A simple web scraper robot.
+Opens a website.
+Stores the web page text in a file in the output directory.
+Saves a screenshot of an element in the output directory.</doc>
+<status status="FAIL" starttime="20220511 22:53:52.225" endtime="20220511 22:53:52.278"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks2">Tasks2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220511 22:53:52.257" level="ERROR">Error in file '/home/gams/Documents/rpachallenge/tasks2.robot' on line 7: Importing library 'RPA.Browser.Selenium' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/gams/.local/bin
+  /usr/lib/python38.zip
+  /usr/lib/python3.8
+  /usr/lib/python3.8/lib-dynload
+  /home/gams/.local/lib/python3.8/site-packages
+  /usr/local/lib/python3.8/dist-packages
+  /usr/lib/python3/dist-packages</msg>
+<msg timestamp="20220511 22:53:52.259" level="ERROR">Error in file '/home/gams/Documents/rpachallenge/tasks2.robot' on line 8: Importing library 'RPA.FileSystem' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/gams/.local/bin
+  /usr/lib/python38.zip
+  /usr/lib/python3.8
+  /usr/lib/python3.8/lib-dynload
+  /home/gams/.local/lib/python3.8/site-packages
+  /usr/local/lib/python3.8/dist-packages
+  /usr/lib/python3/dist-packages</msg>
+</errors>
+</robot>

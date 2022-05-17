@@ -1,13 +1,14 @@
 *** Settings ***
-Library	SeleniumLibrary
+Documentation       Template robot main suite.
 
-*** Variables ***
+Library             Collections
+Library             MyLibrary
+Resource            keywords.robot
+Variables           MyVariables.py
 
-*** Keywords ***
-Abrir Site
-	Open Browser	https://www.rpachallenge.com/  chrome
 
-*** Test Cases ***
-Step 1: Open rpachallenge
-	Abrir Site
-	
+*** Tasks ***
+Example task
+    Example Keyword
+    Example Python Keyword
+    Log    ${TODAY}
