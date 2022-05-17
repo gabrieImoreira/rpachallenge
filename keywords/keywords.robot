@@ -1,7 +1,10 @@
 *** Settings ***
 Documentation       Template keyword resource.
 Variables           MyVariables.py
+Resource    variables.robot
+Library    RPA.Browser    auto_close=${FALSE}
 
 *** Keywords ***
-Example keyword
-    Log    Today is ${TODAY}
+Download Spreadsheet
+    Open Available Browser    ${URL_RPACHALLENGE}
+

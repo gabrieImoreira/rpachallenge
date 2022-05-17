@@ -8,7 +8,6 @@ Variables           MyVariables.py
 
 
 *** Tasks ***
-Example task
-    Example Keyword
-    Example Python Keyword
-    Log    ${TODAY}
+Complete RPA challenge
+    Download Spreadsheet
+    
