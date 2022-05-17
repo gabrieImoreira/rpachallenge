@@ -33,6 +33,7 @@ The directory structure given by the template:
 ├── libraries
 │   └── MyLibrary.py
 ├── variables
+|   └── variables.robot
 │   └── variables.py
 ├── conda.yaml
 ├── robot.yaml
