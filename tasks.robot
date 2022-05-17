@@ -11,5 +11,5 @@ Variables           MyVariables.py
 Complete RPA challenge
     Download Spreadsheet
     ${table}=    Get table from Excel
-    # Start, Fill and Submit form
-    
+    Start, Fill and Submit form    ${table}
+    End Task
